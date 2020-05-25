@@ -12,7 +12,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 정상적으로 실행되었습니다.")
-    game = discord.Game('★~하는중에 표시될 네임 작성★')
+    game = discord.Game('NAVER 자료방')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 #/dm {할말}로 전체DM 전송
@@ -26,12 +26,12 @@ async def on_message(message):
                 try:
                     msg = message.content[4:]
                     if message.author.id == ★자신의 디스코드ID를 적어주세요(퍼미션):
-                        embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at, title="★★최상단 제목★★")
-                        embed.add_field(name="★★제목★★", value=msg, inline=True)
-                        embed.set_footer(text=f"discord.gg/★★서버초대코드★★")
+                        embed = discord.Embed(colour=0x1DDB16, timestamp=message.created_at, title="NAVER 자료방 공지")
+                        embed.add_field(name="오늘도 네이버 자료방을 찾아주셔서 감사합니다!", value=msg, inline=True)
+                        embed.set_footer(text=f"discord.gg/fvTPze")
                         await i.send(embed=embed)
                 except:
                     pass
 
 
-client.run('★★봇토큰★★')
+client.run('NzE0NDExNjgzMDAyNDQ5OTcx.XsuR3Q.FfXksMSO5Rr1uYPO_0TCxV0cVVs')
